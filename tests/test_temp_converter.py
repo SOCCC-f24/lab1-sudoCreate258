@@ -5,9 +5,9 @@ def test_c2f_pass():
     # Valid case for c2f, should pass with both correct and incorrect formula
     assert round(c2f(0), 2) == 32.0  # Freezing point of water
 
-def test_c2f_fail_case():
+def test_c2f_fail_with_broken_formula():
     # This test should fail with the broken formula but pass with the correct one
-    assert round(c2f(1), 2) == 33.8  # Should correctly convert 1°C to 33.8°F
+    assert round(c2f(-40), 2) == -40.0  # -40°C should equal -40°F
 
 def test_c2f_correct():
     # Check for correct formula behavior with other cases
