@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def c2f(c):
-    return (c * 9 / 5) + 32
-def main(cel):
-    return c2f(cel)
+def f2c(f):
+    return f - 32 * 5 / 9
+def main(fah):
+    return f2c(fah)
 if __name__ == "__main__":
-    cel = 100         # input
-    print(main(cel))  # output
+    fah = 100         # input
+    print(main(fah))  # output
